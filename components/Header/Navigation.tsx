@@ -22,7 +22,7 @@ interface MenuItem {
   label: string;
   url: string;
   sub?: SubMenu[];
-  footer?: string;
+  footer?: string | null | undefined;
 }
 
 const Header: React.FC = () => {
@@ -39,7 +39,7 @@ const Header: React.FC = () => {
   return (
     <header className="bg-gray-800 text-white font-mono relative">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
-        <nav className="flex flex-col lg:flex-row items-center space-y-4 lg:space-x-4 lg:space-y-0">
+        <nav className="flex flex-col lg:flex-row items-center space-y-4 lg:space-x-4 lg:space-y-0 ">
           {headerData.menuItems.map((item, index) => (
             <div
               key={item.id}
@@ -58,7 +58,9 @@ const Header: React.FC = () => {
           ))}
         </nav>
 
-        <button>Find a Hotel</button>
+        <button className="border-2 p-2 uppercase hover:bg-white hover:text-gray-800 transition-all">
+          Find a Hotel
+        </button>
       </div>
     </header>
   );

@@ -23,7 +23,7 @@ interface Props {
         sections: Section[];
       }
     | undefined;
-  footer: string | null;
+  footer: string | null | undefined;
 }
 
 const SubMenus: React.FC<Props> = ({ submenus, footer }) => {
@@ -35,7 +35,7 @@ const SubMenus: React.FC<Props> = ({ submenus, footer }) => {
 
   return (
     <div className="absolute top-[3rem] left-0 right-0 w-screen h-auto bg-white shadow-lg text-gray-800">
-      <div className="container mx-auto p-3 flex justify-between ">
+      <div className="container mx-auto p-3 flex gap-[2rem]">
         {submenusArray.map((submenu) => (
           <div key={submenu.id} className="w-auto">
             <h1 className="font-bold">{submenu.dec}</h1>

@@ -14,12 +14,12 @@ const MainHeader: React.FC = () => {
   
 
   return (
-    <section className="bg-white p-4 text-gray-800">
+    <section className="bg-white p-4 text-gray-800 font-sans">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         <div className="flex items-center mb-4 lg:mb-0">
           <Link
             href="/"
-            className="flex items-center gap-3 capitalize font-bold">
+            className="flex items-center gap-3 capitalize font-bold cursor-pointer">
             <FaHotel className="text-xl" /> hotel
           </Link>
         </div>
