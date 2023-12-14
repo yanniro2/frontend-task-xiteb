@@ -10,14 +10,22 @@
           "id": 100,
           "dec": "About The Hotel",
           "sections": [
-            { "id": 1001, "title": "overview", "url": "overview" },
-            { "id": 1002, "title": "Explore Colombo", "url": "exploreColombo" },
+            { "id": 1001, "title": "Overview", "url": "/about/overview" },
+            {
+              "id": 1002,
+              "title": "Explore Colombo",
+              "url": "/about/exploreColombo"
+            },
             {
               "id": 1003,
               "title": "Services & Facilities",
-              "url": "servicesFacilities"
+              "url": "/about/servicesFacilities"
             },
-            { "id": 1004, "title": "Map & Directions", "url": "mapDirections" }
+            {
+              "id": 1004,
+              "title": "Map & Directions",
+              "url": "/about/mapDirections"
+            }
           ]
         }
       ]
@@ -32,21 +40,25 @@
           "id": 201,
           "dec": "Rooms",
           "sections": [
-            { "id": 2001, "title": "Overview", "url": "roomsOverview" },
+            {
+              "id": 2001,
+              "title": "Deluxe Lake View",
+              "url": "/rooms/deluxeLakeView"
+            },
             {
               "id": 2002,
-              "title": "Explore Colombo",
-              "url": "roomsExploreColombo"
+              "title": "Deluxe Ocean View",
+              "url": "/rooms/deluxeOceanView"
             },
             {
               "id": 2003,
-              "title": "Services & Facilities",
-              "url": "roomsServicesFacilities"
+              "title": "Premier Balcony",
+              "url": "/rooms/premierBalcony"
             },
             {
               "id": 2004,
-              "title": "Map & Directions",
-              "url": "roomsMapDirections"
+              "title": "Premier Ocean View",
+              "url": "/rooms/premierOceanView"
             }
           ]
         },
@@ -54,21 +66,15 @@
           "id": 302,
           "dec": "Horizon Club",
           "sections": [
-            { "id": 3001, "title": "Overview", "url": "horizonClubOverview" },
+            {
+              "id": 3001,
+              "title": "Horizon Club Lake View",
+              "url": "/horizonClub/lakeView"
+            },
             {
               "id": 3002,
-              "title": "Explore Colombo",
-              "url": "horizonClubExploreColombo"
-            },
-            {
-              "id": 3003,
-              "title": "Services & Facilities",
-              "url": "horizonClubServicesFacilities"
-            },
-            {
-              "id": 3004,
-              "title": "Map & Directions",
-              "url": "horizonClubMapDirections"
+              "title": "Horizon Club Ocean View",
+              "url": "/horizonClub/oceanView"
             }
           ]
         },
@@ -76,21 +82,20 @@
           "id": 403,
           "dec": "Suites",
           "sections": [
-            { "id": 4001, "title": "Overview", "url": "suitesOverview" },
+            {
+              "id": 4001,
+              "title": "Executive Suites",
+              "url": "/suites/executive"
+            },
             {
               "id": 4002,
-              "title": "Explore Colombo",
-              "url": "suitesExploreColombo"
+              "title": "Specialty Suites",
+              "url": "/suites/specialty"
             },
             {
               "id": 4003,
-              "title": "Services & Facilities",
-              "url": "suitesServicesFacilities"
-            },
-            {
-              "id": 4004,
-              "title": "Map & Directions",
-              "url": "suitesMapDirections"
+              "title": "Shangri-La Suite",
+              "url": "/suites/shangriLa"
             }
           ]
         },
@@ -100,24 +105,177 @@
           "sections": [
             {
               "id": 5001,
-              "title": "Overview",
-              "url": "connectingRoomsOverview"
+              "title": "Executive Suite & Premier Ocean Room Connecting",
+              "url": "/connectingRooms/executivePremierOcean"
             },
             {
               "id": 5002,
-              "title": "Explore Colombo",
-              "url": "connectingRoomsExploreColombo"
+              "title": "Two Deluxe Lake View Rooms Connecting",
+              "url": "/connectingRooms/twoDeluxeLakeView"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Dining",
+      "url": "/dining",
+      "footer": "DINING OVERVIEW",
+      "sub": [
+        {
+          "id": 301,
+          "dec": "Restaurants",
+          "sections": [
+            {
+              "id": 3001,
+              "title": "Cake Temptations by Shangri-La Colombo",
+              "url": "/dining/cakeTemptations"
+            },
+            {
+              "id": 3002,
+              "title": "Shang Palace",
+              "url": "/dining/shangPalace"
+            },
+            {
+              "id": 3003,
+              "title": "Capital Bar & Grill",
+              "url": "/dining/capitalBarGrill"
+            },
+            { "id": 3004, "title": "Central", "url": "/dining/central" },
+            {
+              "id": 3005,
+              "title": "Central Café",
+              "url": "/dining/centralCafe"
+            }
+          ]
+        },
+        {
+          "id": 302,
+          "dec": "Bars & Lounges",
+          "sections": [
+            {
+              "id": 3006,
+              "title": "Sapphyr Lounge",
+              "url": "/dining/sapphyrLounge"
+            },
+            { "id": 3007, "title": "Pool Bar", "url": "/dining/poolBar" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Experience",
+      "url": "/experience",
+      "footer": "EXPERIENCE OVERVIEW",
+      "sub": [
+        {
+          "id": 401,
+          "dec": "For Kids",
+          "sections": [
+            {
+              "id": 4001,
+              "title": "Kids Play Zone",
+              "url": "/experience/kidsPlayZone"
+            },
+            {
+              "id": 4002,
+              "title": "Children's Menu",
+              "url": "/experience/childrensMenu"
+            }
+          ]
+        },
+        {
+          "id": 402,
+          "dec": "Health & Leisure",
+          "sections": [
+            {
+              "id": 4003,
+              "title": "Fitness Center",
+              "url": "/experience/fitnessCenter"
+            },
+            {
+              "id": 4004,
+              "title": "Swimming Pool",
+              "url": "/experience/swimmingPool"
+            },
+            {
+              "id": 4005,
+              "title": "Spa & Wellness",
+              "url": "/experience/spaWellness"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Events",
+      "url": "/events",
+      "footer": "EVENTS OVERVIEW",
+      "sub": [
+        {
+          "id": 501,
+          "dec": "Meetings & Events",
+          "sections": [
+            {
+              "id": 5001,
+              "title": "Meeting Rooms",
+              "url": "/events/meetingRooms"
+            },
+            {
+              "id": 5002,
+              "title": "Event Spaces",
+              "url": "/events/eventSpaces"
             },
             {
               "id": 5003,
-              "title": "Services & Facilities",
-              "url": "connectingRoomsServicesFacilities"
-            },
+              "title": "Planning Services",
+              "url": "/events/planningServices"
+            }
+          ]
+        },
+        {
+          "id": 502,
+          "dec": "Wedding and Celebrations",
+          "sections": [
             {
               "id": 5004,
-              "title": "Map & Directions",
-              "url": "connectingRoomsMapDirections"
+              "title": "Wedding Venues",
+              "url": "/events/weddingVenues"
+            },
+            {
+              "id": 5005,
+              "title": "Celebration Packages",
+              "url": "/events/celebrationPackages"
             }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Gallery",
+      "url": "/gallery",
+      "footer": "GALLERY OVERVIEW"
+    },
+    {
+      "id": 7,
+      "label": "Offers",
+      "url": "/offers",
+      "footer": "OFFERS OVERVIEW"
+    },
+    {
+      "id": 8,
+      "label": "More",
+      "url": "/more",
+      "sub": [
+        {
+          "id": 801,
+          "dec": "Apartments",
+          "sections": [
+            { "id": 8001, "title": "Learn More", "url": "/more/apartments" }
           ]
         }
       ]
