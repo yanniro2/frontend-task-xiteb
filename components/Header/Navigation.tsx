@@ -24,8 +24,10 @@ interface MenuItem {
   sub?: SubMenu[];
   footer?: string | null | undefined;
 }
-
-const Header: React.FC = () => {
+interface NavigationProps {
+  isSticky: boolean;
+}
+const Navigation: React.FC<NavigationProps> = ({ isSticky }) => {
   const [activeSubMenu, setActiveSubMenu] = useState<number | null>(null);
 
   const handleMouseEnter = (index: number) => {
@@ -37,7 +39,12 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-gray-800 text-white font-mono relative">
+    <header
+      className={`bg-gray-800 text-white font-mono transition-all  ${
+        isSticky
+          ? "fixed top-0 w-full z-[1000] left-0 right-0 drop-shadow"
+          : "relative"
+      }`}>
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         <nav className="flex flex-col lg:flex-row items-center space-y-4 lg:space-x-4 lg:space-y-0 ">
           {headerData.menuItems.map((item, index) => (
@@ -66,4 +73,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default Navigation;
