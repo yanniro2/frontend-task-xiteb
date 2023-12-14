@@ -1,13 +1,126 @@
 {
-  "logo": "path/to/your/logo.png",
   "menuItems": [
-    { "id": 1, "label": "Home", "url": "/" },
-    { "id": 2, "label": "About", "url": "/about" },
-    { "id": 3, "label": "Services", "url": "/services" },
-    { "id": 4, "label": "Contact", "url": "/contact" }
-  ],
-  "user": {
-    "name": "John Doe",
-    "avatar": "path/to/avatar.png"
-  }
+    {
+      "id": 1,
+      "label": "About",
+      "url": "/about",
+      "footer": null,
+      "sub": [
+        {
+          "id": 100,
+          "dec": "About The Hotel",
+          "sections": [
+            { "id": 1001, "title": "overview", "url": "overview" },
+            { "id": 1002, "title": "Explore Colombo", "url": "exploreColombo" },
+            {
+              "id": 1003,
+              "title": "Services & Facilities",
+              "url": "servicesFacilities"
+            },
+            { "id": 1004, "title": "Map & Directions", "url": "mapDirections" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Rooms & Suites",
+      "url": "/rooms",
+      "footer": "ROOMS & SUITES OVERVIEW",
+      "sub": [
+        {
+          "id": 201,
+          "dec": "Rooms",
+          "sections": [
+            { "id": 2001, "title": "Overview", "url": "roomsOverview" },
+            {
+              "id": 2002,
+              "title": "Explore Colombo",
+              "url": "roomsExploreColombo"
+            },
+            {
+              "id": 2003,
+              "title": "Services & Facilities",
+              "url": "roomsServicesFacilities"
+            },
+            {
+              "id": 2004,
+              "title": "Map & Directions",
+              "url": "roomsMapDirections"
+            }
+          ]
+        },
+        {
+          "id": 302,
+          "dec": "Horizon Club",
+          "sections": [
+            { "id": 3001, "title": "Overview", "url": "horizonClubOverview" },
+            {
+              "id": 3002,
+              "title": "Explore Colombo",
+              "url": "horizonClubExploreColombo"
+            },
+            {
+              "id": 3003,
+              "title": "Services & Facilities",
+              "url": "horizonClubServicesFacilities"
+            },
+            {
+              "id": 3004,
+              "title": "Map & Directions",
+              "url": "horizonClubMapDirections"
+            }
+          ]
+        },
+        {
+          "id": 403,
+          "dec": "Suites",
+          "sections": [
+            { "id": 4001, "title": "Overview", "url": "suitesOverview" },
+            {
+              "id": 4002,
+              "title": "Explore Colombo",
+              "url": "suitesExploreColombo"
+            },
+            {
+              "id": 4003,
+              "title": "Services & Facilities",
+              "url": "suitesServicesFacilities"
+            },
+            {
+              "id": 4004,
+              "title": "Map & Directions",
+              "url": "suitesMapDirections"
+            }
+          ]
+        },
+        {
+          "id": 504,
+          "dec": "Connecting Rooms",
+          "sections": [
+            {
+              "id": 5001,
+              "title": "Overview",
+              "url": "connectingRoomsOverview"
+            },
+            {
+              "id": 5002,
+              "title": "Explore Colombo",
+              "url": "connectingRoomsExploreColombo"
+            },
+            {
+              "id": 5003,
+              "title": "Services & Facilities",
+              "url": "connectingRoomsServicesFacilities"
+            },
+            {
+              "id": 5004,
+              "title": "Map & Directions",
+              "url": "connectingRoomsMapDirections"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

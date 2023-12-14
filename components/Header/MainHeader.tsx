@@ -14,7 +14,7 @@ const MainHeader: React.FC = () => {
   
 
   return (
-    <section className="bg-white p-4 text-black">
+    <section className="bg-white p-4 text-gray-800">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         <div className="flex items-center mb-4 lg:mb-0">
           <Link

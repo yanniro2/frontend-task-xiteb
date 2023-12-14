@@ -14,6 +14,9 @@
 .link-1:first-child {
     @apply border-r-2  px-3 border-black;  
 }
+.link-2 {
+    @apply flex items-center capitalize hover:text-gray-500 transition-all;
+}
 
 
 

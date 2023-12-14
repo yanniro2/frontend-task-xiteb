@@ -1,62 +1,64 @@
-// components/Header.tsx
-
-import React from "react";
+// Navigation.tsx
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
+import SubMenus from "./SubMenus";
 import headerData from "../../data/headerData.json";
-import Image from "next/image";
+
+interface Section {
+  id: number;
+  title: string;
+  url: string;
+}
+
+interface SubMenu {
+  id: number;
+  dec: string;
+  sections: Section[];
+}
 
 interface MenuItem {
   id: number;
   label: string;
   url: string;
-}
-
-interface UserData {
-  name: string;
-  avatar: string;
-}
-
-interface HeaderData {
-  logo: string;
-  menuItems: MenuItem[];
-  user: UserData;
+  sub?: SubMenu[];
+  footer?: string;
 }
 
 const Header: React.FC = () => {
-  const { logo, menuItems, user } = headerData as HeaderData;
+  const [activeSubMenu, setActiveSubMenu] = useState<number | null>(null);
+
+  const handleMouseEnter = (index: number) => {
+    setActiveSubMenu(index);
+  };
+
+  const handleMouseLeave = () => {
+    setActiveSubMenu(null);
+  };
 
   return (
-    <header className="bg-blue-500 p-4">
+    <header className="bg-gray-800 text-white font-mono relative">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
-        <div className="flex items-center mb-4 lg:mb-0">
-          {/* <Image src={logo} alt="Logo" className="h-8 w-auto" width={32} height={32} /> */}
-          <span className="text-white ml-2 text-lg font-semibold">
-            Your Next.js App
-          </span>
-        </div>
-
         <nav className="flex flex-col lg:flex-row items-center space-y-4 lg:space-x-4 lg:space-y-0">
-          {menuItems.map((item) => (
-            <a
+          {headerData.menuItems.map((item, index) => (
+            <div
               key={item.id}
-              href={item.url}
-              className="text-white hover:text-gray-300">
-              {item.label}
-            </a>
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}>
+              <Link
+                href={item.url}
+                className="text-white flex items-center gap-2 uppercase font-medium hover:bg-white hover:text-gray-800 transition-all p-3">
+                {item.label}
+              </Link>
+
+              {item.sub && activeSubMenu === index && (
+                <SubMenus submenus={item.sub} footer={item.footer} />
+              )}
+            </div>
           ))}
         </nav>
 
-        <div className="flex items-center">
-          <span className="text-white mr-2 hidden lg:inline">
-            Welcome, {user.name}
-          </span>
-          {/* <Image
-            src={user.avatar}
-            alt="User Avatar"
-            className="h-8 w-8 rounded-full"
-            width={20}
-            height={20}
-          /> */}
-        </div>
+        <button>Find a Hotel</button>
       </div>
     </header>
   );
