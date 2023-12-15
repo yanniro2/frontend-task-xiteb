@@ -32,4 +32,8 @@
     @apply  px-3 ;
 }
 
+.h1 {
+    @apply text-4xl text-gray-800 font-mono font-bold text-center pt-[2rem] uppercase flex items-center gap-5 ;
+}
+
 

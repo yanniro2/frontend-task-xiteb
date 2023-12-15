@@ -1,0 +1,46 @@
+{
+  "offers": [
+    {
+      "id": 1,
+      "title": "Special Weekend Getaway",
+      "subtitle": "Escape to Luxury",
+      "description": "Enjoy a weekend retreat in our luxurious accommodations. Indulge in gourmet dining, relax in our spa, and make unforgettable memories. Book now and experience the perfect weekend getaway.",
+      "img": "/experience/img_1.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Business Travel Package",
+      "subtitle": "Convenience for Professionals",
+      "description": "Our business travel package offers comfort and convenience. Enjoy a well-appointed room, high-speed internet, and access to our business center. Make your business trip a seamless and productive experience.",
+      "img": "/experience/img_4.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Romantic Couples Package",
+      "subtitle": "Celebrate Love",
+      "description": "Surprise your loved one with our romantic couples package. Luxurious accommodations, candlelit dinners, and spa treatments await you. Create magical moments and celebrate your love in style.",
+      "img": "/experience/img_6.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Family Vacation Special",
+      "subtitle": "Fun for the Whole Family",
+      "description": "Plan a memorable family vacation with our special package. Family-friendly accommodations, entertainment options, and activities for all ages. Create lasting memories with your loved ones.",
+      "img": "/experience/img_2.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Event Celebration Offer",
+      "subtitle": "Host Unforgettable Events",
+      "description": "Book your event with us and enjoy exclusive offers. Our versatile event spaces, dedicated planning team, and catering services ensure a seamless and memorable celebration. Make your special moments extraordinary.",
+      "img": "/experience/img_5.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Extended Stay Discount",
+      "subtitle": "Stay Longer, Save More",
+      "description": "Extend your stay and save! Enjoy a discount on longer stays in our comfortable and well-equipped accommodations. Take your time to explore the city or simply relax in the comforts of our hotel.",
+      "img": "/experience/img_3.jpeg"
+    }
+  ]
+}

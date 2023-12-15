@@ -26,7 +26,7 @@ const Destination: React.FC = () => {
   return (
     <section className="w-screen h-screen bg-gray-100 ">
       <div className="container mx-auto h-full flex items-center flex-col">
-        <h1 className="text-4xl text-gray-800 font-mono font-bold text-center pt-[2rem] uppercase flex items-center gap-5">
+        <h1 className="h1">
           Our Destinations
           <select
             onChange={handleSelectChange}
@@ -50,7 +50,7 @@ const Destination: React.FC = () => {
               className="w-full h-full object-cover border-4 border-gray-800 rounded-lg drop-shadow"
             />
 
-            <div className="text-gray-600 absolute w-1/4 h-1/2 top-1/2 right-0 backdrop-blur p-3 rounded-lg -translate-x-1/2 -translate-y-1/2 drop-shadow shadow-lg backdrop-brightness-50 flex flex-col justify-evenly">
+            <div className="text-gray-600 absolute w-1/4 h-1/2 top-1/2 right-0 backdrop-blur p-3 rounded-lg -translate-x-1/2 -translate-y-1/2 drop-shadow shadow-lg backdrop-brightness-50 flex flex-col justify-evenly border-4 border-white">
               <h2 className="text-2xl font-bold  font-mono text-white uppercase">
                 {selectedItem.label}
               </h2>
