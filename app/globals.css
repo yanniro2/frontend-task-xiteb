@@ -21,6 +21,15 @@
 .slider-btn {
     @apply text-4xl hover:text-gray-800 bg-transparent p-1 rounded-full drop-shadow-md cursor-pointer hover:bg-white border-white backdrop-blur-md text-white transition-all;
 }
+.box-1 {
+    @apply flex items-center gap-5;
+}
 
+.box-1:nth-child(even) {
+    @apply border-l-4 border-r-4 p-5 border-gray-800;
+}
+.box-1:nth-child(odd) {
+    @apply  px-3 ;
+}
 
 

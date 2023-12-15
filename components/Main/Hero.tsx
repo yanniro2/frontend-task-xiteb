@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import data from "../../data/sliderData.json";
 import Slider from "../Hero/Slider";
 import { GrFormNext } from "react-icons/gr";
+import Booking from "../Hero/Booking";
 type Props = {};
 
 const Hero = (props: Props) => {
@@ -41,17 +42,18 @@ const Hero = (props: Props) => {
           </button>
         </div>
 
-        <div className="absolute z-[60] left-1/2 bottom-5 -translate-y-1/2 flex items-center gap-3 -translate-x-1/2">
+        <div className="absolute z-[60] left-1/2 top-5 -translate-y-1/2 flex items-center gap-3 -translate-x-1/2">
           {data.map((item) => (
             <div
               key={item.id}
-              className={`w-3 h-3 rounded-full border-4  ${
+              className={`w-3 h-3 rounded-full   ${
                 item.id === currentSlide + 1
-                  ? "bg-gray-300 border-white"
-                  : "bg-transparent border-gray-800"
+                  ? "bg-gray-300 border-white border-4"
+                  : "bg-transparent border-gray-800 border-2"
               }`}></div>
           ))}
         </div>
+        <Booking />
       </div>
     </section>
   );

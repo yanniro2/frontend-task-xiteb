@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const threshold = 50; // Adjust this value based on your design
+      const threshold = 100; // Adjust this value based on your design
       setIsSticky(scrollPosition > threshold);
     };
 
