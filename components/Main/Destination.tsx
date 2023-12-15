@@ -1,11 +1,66 @@
-import React from 'react'
+"use client";
+import React, { useState, useEffect } from "react";
+import data from "../../data/directionData.json";
+import Image from "next/image";
 
-type Props = {}
-
-const Destination = (props: Props) => {
-  return (
-    <div>Destination</div>
-  )
+interface MenuItem {
+  id: number;
+  label: string;
+  image: string;
+  details: string;
 }
 
-export default Destination
+const Destination: React.FC = () => {
+  const [menuItems, setMenuItems] = useState<MenuItem[]>(data);
+  const [selectedItem, setSelectedItem] = useState<MenuItem | null>(
+    menuItems[0]
+  ); // Set the first item as default
+
+  const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedId = parseInt(event.target.value, 10);
+    const selectedItem =
+      menuItems.find((item) => item.id === selectedId) || null;
+    setSelectedItem(selectedItem);
+  };
+
+  return (
+    <section className="w-screen h-screen bg-gray-100 ">
+      <div className="container mx-auto h-full flex items-center flex-col">
+        <h1 className="text-4xl text-gray-800 font-mono font-bold text-center pt-[2rem] uppercase flex items-center gap-5">
+          Our Destinations
+          <select
+            onChange={handleSelectChange}
+            value={selectedItem?.id}
+            className="bg-transparent p-3  focus:outline-none focus:border-blue-500 font-medium text-xl font-serif border-b-gray-800 border-b-4">
+            {menuItems.map((item) => (
+              <option key={item.id} value={item.id}>
+                {item.label}
+              </option>
+            ))}
+          </select>
+        </h1>
+
+        {selectedItem && (
+          <div className="w-full h-[80%] relative mt-4">
+            <Image
+              src={selectedItem.image}
+              alt={selectedItem.label}
+              width={1000}
+              height={1000}
+              className="w-full h-full object-cover border-4 border-gray-800 rounded-lg drop-shadow"
+            />
+
+            <div className="text-gray-600 absolute w-1/4 h-1/2 top-1/2 right-0 backdrop-blur p-3 rounded-lg -translate-x-1/2 -translate-y-1/2 drop-shadow shadow-lg backdrop-brightness-50 flex flex-col justify-evenly">
+              <h2 className="text-2xl font-bold  font-mono text-white uppercase">
+                {selectedItem.label}
+              </h2>
+              <p className=" font-sans text-gray-300">{selectedItem.details}</p>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+};
+
+export default Destination;

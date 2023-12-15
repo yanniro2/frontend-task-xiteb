@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "label": "Habarana Village by Cinnamon",
+    "image": "/destination/img_1.jpeg",
+    "details": "Experience affordable rustic barefoot type elegance, which is designed to reflect the rural environs and simplicity of the local village life surrounded by rich biodiversity."
+  },
+  {
+    "id": 2,
+    "label": "Cinnamon Velifushi Maldives",
+    "image": "/destination/img_2.jpeg",
+    "details": "Cinnamon Velifushi Maldives, a one-resort island for sun, activity, relaxation and luxury surrounded by exotic marine life and a swimmable lagoon"
+  },
+  {
+    "id": 3,
+    "label": "Cinnamon Hakuraa Huraa Maldives",
+    "image": "/destination/img_3.jpeg",
+    "details": "Cinnamon Hakuraa Huraa Maldives with its white roofed Water Bungalows set knee-deep in crystal waters of the lagoon is a vision of the stay promised."
+  },
+  {
+    "id": 4,
+    "label": "Ellaidhoo Maldives by Cinnamon",
+    "image": "/destination/img_4.jpeg",
+    "details": "Dive into the most candid experience with the ocean at our house reef with an awe-inspiring diversity of underwater life."
+  },
+  {
+    "id": 5,
+    "label": "Cinnamon Dhonveli Maldives",
+    "image": "/destination/img_5.jpeg",
+    "details": "Feel an irrepressible wave of excitement as you have the best surfing experience, set to the backdrop of serenity, and pristine blue waters."
+  }
+]
