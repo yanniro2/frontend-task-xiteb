@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "heading": "Luxurious Accommodations",
+    "subheading": "Experience unparalleled comfort in our elegant and spacious rooms.",
+    "img": "/slider/image_1.jpeg"
+  },
+  {
+    "id": 2,
+    "heading": "Fine Dining Experience",
+    "subheading": "Indulge in exquisite culinary creations prepared by our skilled chefs.",
+    "img": "/slider/image_2.jpeg"
+  },
+  {
+    "id": 3,
+    "heading": "Relaxing Spa Retreat",
+    "subheading": "Rejuvenate your senses with our soothing spa treatments and massages.",
+    "img": "/slider/image_3.jpeg"
+  },
+  {
+    "id": 4,
+    "heading": "Event Spaces for Every Occasion",
+    "subheading": "Host your special events in our versatile and elegant event spaces.",
+    "img": "/slider/image_4.jpeg"
+  },
+  {
+    "id": 5,
+    "heading": "Outdoor Adventures",
+    "subheading": "Discover thrilling outdoor activities and explore the natural beauty around.",
+    "img": "/slider/image_5.jpeg"
+  },
+  {
+    "id": 6,
+    "heading": "Exceptional Services",
+    "subheading": "Our dedicated staff is committed to providing you with a memorable stay.",
+    "img": "/slider/image_6.jpeg"
+  }
+]

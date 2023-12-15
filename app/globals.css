@@ -18,5 +18,9 @@
     @apply flex items-center capitalize hover:text-gray-500 transition-all;
 }
 
+.slider-btn {
+    @apply text-4xl hover:text-gray-800 bg-transparent p-1 rounded-full drop-shadow-md cursor-pointer hover:bg-white border-white backdrop-blur-md text-white transition-all;
+}
+
 
 
