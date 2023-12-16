@@ -18,6 +18,10 @@
     @apply flex items-center capitalize hover:text-gray-500 transition-all;
 }
 
+.link-3 {
+    @apply w-full items-center gap-5 flex justify-center capitalize hover:bg-gray-200 p-3 transition-all z-[2500];
+}
+
 .slider-btn {
     @apply text-4xl hover:text-gray-800 bg-transparent p-1 rounded-full drop-shadow-md cursor-pointer hover:bg-white border-white backdrop-blur-md text-white transition-all;
 }
