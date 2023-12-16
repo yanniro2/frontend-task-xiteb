@@ -23,13 +23,13 @@ const Experience = () => {
   };
 
   return (
-    <section className="w-screen h-screen flex items-start justify-center flex-col bg-white transition-all">
+    <section className="w-screen h-screen flex items-start justify-center flex-col bg-white transition-all mb-[3rem]">
       <div className="container mx-auto">
         <div className="flex items-center justify-center flex-col">
           <h1 className="h1">Wonderful stays await</h1>
-          <h6 className="font-serif text-gray-400">
+          <span className="font-serif text-gray-400 ">
             Indulge in a cozy getaway with our exclusive offers.
-          </h6>
+          </span>
         </div>
 
         <div className="w-full h-[80vh] grid grid-cols-3 grid-rows-2 gap-5 pt-[2rem] group">

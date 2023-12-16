@@ -1,0 +1,100 @@
+{
+  "offers": [
+    {
+      "id": 1,
+      "title": "Luxury Spa Retreat",
+      "subtitle": "Pamper Yourself",
+      "description": "Indulge in a rejuvenating spa retreat. Unwind with luxurious spa treatments, tranquil surroundings, and exquisite amenities.",
+      "membership": true,
+      "category": "Room",
+      "offerType": "Spa Retreat",
+      "startingPrice": 300,
+      "image": "/offers/img_1.jpeg",
+      "dates": {
+        "start": "2023-09-01",
+        "end": "2023-09-03"
+      },
+      "nights": 2
+    },
+    {
+      "id": 2,
+      "title": "Gastronomic Delights Package",
+      "subtitle": "Culinary Excellence",
+      "description": "Savor the finest culinary experiences with our gastronomic delights package. Enjoy gourmet meals, wine pairings, and culinary events.",
+      "membership": false,
+      "category": "Room",
+      "offerType": "Culinary Package",
+      "startingPrice": 250,
+      "image": "/offers/img_2.jpeg",
+      "dates": {
+        "start": "2023-10-10",
+        "end": "2023-10-15"
+      },
+      "nights": 5
+    },
+    {
+      "id": 3,
+      "title": "Wellness Retreat",
+      "subtitle": "Mind and Body Harmony",
+      "description": "Embark on a journey to wellness. Our wellness retreat includes yoga sessions, meditation, and wholesome nutrition for a balanced experience.",
+      "membership": true,
+      "category": "Room",
+      "offerType": "Wellness Package",
+      "startingPrice": 280,
+      "image": "/offers/img_3.jpeg",
+      "dates": {
+        "start": "2023-11-20",
+        "end": "2023-11-22"
+      },
+      "nights": 2
+    },
+    {
+      "id": 4,
+      "title": "Family Fun Getaway",
+      "subtitle": "Create Cherished Memories",
+      "description": "Plan a family-friendly getaway with activities for all ages. Enjoy spacious accommodations, exciting adventures, and quality family time.",
+      "membership": false,
+      "category": "Room",
+      "offerType": "Family Fun Package",
+      "startingPrice": 180,
+      "image": "/offers/img_4.jpeg",
+      "dates": {
+        "start": "2023-12-15",
+        "end": "2023-12-20"
+      },
+      "nights": 5
+    },
+    {
+      "id": 5,
+      "title": "Winter Wonderland Escape",
+      "subtitle": "Embrace the Cold",
+      "description": "Experience the magic of winter with our special package. Enjoy snowy landscapes, winter sports, and cozy evenings by the fireplace.",
+      "membership": true,
+      "category": "Room",
+      "offerType": "Winter Escape",
+      "startingPrice": 220,
+      "image": "/offers/img_5.jpeg",
+      "dates": {
+        "start": "2024-01-05",
+        "end": "2024-01-10"
+      },
+      "nights": 5
+    },
+    {
+      "id": 6,
+      "title": "Digital Detox Retreat",
+      "subtitle": "Unplug and Recharge",
+      "description": "Escape the digital world and reconnect with nature. Our digital detox retreat offers a peaceful environment for relaxation and self-discovery.",
+      "membership": false,
+      "category": "Room",
+      "offerType": "Digital Detox",
+      "startingPrice": 180,
+      "image": "/offers/img_6.jpeg",
+      "dates": {
+        "start": "2024-02-15",
+        "end": "2024-02-20"
+      },
+      "nights": 5
+    }
+  ]
+}

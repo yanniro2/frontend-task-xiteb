@@ -33,7 +33,11 @@
 }
 
 .h1 {
-    @apply text-4xl text-gray-800 font-mono font-bold text-center pt-[2rem] uppercase flex items-center gap-5 ;
+    @apply text-4xl text-gray-800 font-mono font-bold text-center  uppercase flex items-center gap-5 justify-center  ;
+}
+
+.span-1 {
+    @apply font-semibold text-gray-600;
 }
 
 
