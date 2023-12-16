@@ -96,7 +96,7 @@ const Booking = (props: Props) => {
     setRooms(newRooms);
   };
   return (
-    <div className="absolute z-[60] left-1/2 bottom-0 -translate-y-1/2 gap-3 -translate-x-1/2 border-4  border-gray-800 bg-white rounded-lg drop-shadow-md w-full flex items-center justify-between">
+    <div className="absolute z-[60] left-1/2 bottom-0 -translate-y-1/2 gap-3 -translate-x-1/2 border-4  border-gray-800 bg-white rounded-lg drop-shadow-md w-full  items-center justify-between hidden lg:flex">
       <div className="box-1">
         <div className="flex items-center gap-3 capitalize font-medium">
           <input
