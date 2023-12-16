@@ -22,7 +22,9 @@ const Slider: React.FC<SlideProps> = ({ heading, subheading, img }) => {
         <h1 className="text-4xl text-white font-mono font-semibold uppercase">
           {heading}
         </h1>
-        <p className="text-gray-100 capitalize tracking-wider">{subheading}</p>
+        <p className="text-gray-100 capitalize tracking-wider font-sans">
+          {subheading}
+        </p>
       </div>
     </div>
   );

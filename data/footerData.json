@@ -1,0 +1,53 @@
+{
+  "footer": {
+    "corporateInformation": {
+      "cinnamonHotelsAndResorts": "Cinnamon Hotels & Resorts",
+      "johnKeellsGroup": "John Keells Group"
+    },
+    "blogs": {
+      "cinnamonUblog": "Cinnamon Ublog"
+    },
+    "careers": {
+      "careers": "Careers"
+    },
+    "newsAndAwards": {
+      "news": "News",
+      "awards": "Awards"
+    },
+    "corporateGovernance": {
+      "csr": "CSR",
+      "dataPrivacyAndSecurityPolicy": "Data Privacy & Security Policy"
+    },
+    "termsAndConditions": {
+      "termsAndConditions": "Terms & Conditions",
+      "privacyStatement": "Privacy Statement"
+    },
+    "getInTouch": {
+      "email": "info@cinnamonhotels.com",
+      "hotelContactInformation": "Hotel Contact Information"
+    },
+    "followUs": "Follow Us",
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/CinnamonHotels",
+        "icon": "FaFacebook"
+      },
+      "twitter": {
+        "url": "https://twitter.com/CinnamonHotels",
+        "icon": "FaTwitter"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/cinnamonhotels",
+        "icon": "FaInstagram"
+      },
+      "linkedin": {
+        "url": "https://www.linkedin.com/company/cinnamonhotels",
+        "icon": "FaLinkedin"
+      }
+    },
+    "newsletter": {
+      "label": "Get Cinnamon in your inbox",
+      "emailPlaceholder": "Email Address"
+    }
+  }
+}

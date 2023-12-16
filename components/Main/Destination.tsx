@@ -25,7 +25,7 @@ const Destination: React.FC = () => {
 
   return (
     <section className="w-screen h-screen bg-gray-100 ">
-      <div className="container mx-auto h-full flex items-center flex-col">
+      <div className="container mx-auto h-full flex items-center flex-col py-[2rem]">
         <h1 className="h1">
           Our Destinations
           <select

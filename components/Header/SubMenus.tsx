@@ -34,7 +34,7 @@ const SubMenus: React.FC<Props> = ({ submenus, footer }) => {
   const submenusArray = Array.isArray(submenus) ? submenus : [submenus];
 
   return (
-    <div className="absolute top-[3rem] left-0 right-0 w-screen h-auto bg-white shadow-lg text-gray-800">
+    <div className="absolute top-[3rem] left-0 right-0 w-screen h-auto bg-white shadow-lg text-gray-800 z-[1000]">
       <div className="container mx-auto p-3 flex gap-[2rem]">
         {submenusArray.map((submenu) => (
           <div key={submenu.id} className="w-auto">
