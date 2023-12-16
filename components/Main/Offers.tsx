@@ -23,20 +23,20 @@ const Offers = (props: Props) => {
   };
 
   return (
-    <section className="w-screen h-screen  bg-gray-100 pt-[2rem]">
+    <section className="w-screen lg:h-screen  bg-gray-100 pt-[2rem] h-full">
       <div className="container mx-auto h-full">
         <h1 className="h1 py-[2rem]">Special Offers</h1>
-        <div className="w-full h-[70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="w-full  lg:h-[70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-3 lg:p-0">
           {currentOffers.map((offer) => (
             <div
               key={offer.id}
-              className="bg-white  rounded-md shadow-md w-full h-full overflow-hidden flex flex-col relative">
+              className="bg-white  rounded-md  w-full lg:h-full overflow-hidden flex flex-col relative cursor-pointer hover:shadow-md hover:-translate-y-3 transition-all h-min">
               <Image
                 src={offer.image}
                 alt={offer.title}
                 width={500}
                 height={500}
-                className="h-1/3 w-full object-cover rounded-t-lg z-30"
+                className="lg:h-1/3 w-full object-cover rounded-t-lg z-30 h-[40vh]"
               />
 
               {offer.membership && (
@@ -80,7 +80,7 @@ const Offers = (props: Props) => {
             </div>
           ))}
         </div>
-        <div className=" w-full flex justify-center items-center mt-[2rem] gap-5">
+        <div className=" w-full flex justify-center items-center lg:mt-[2rem] gap-5 py-[2rem] lg:p-0">
           <button
             onClick={handlePrevPage}
             disabled={currentPage === 1}

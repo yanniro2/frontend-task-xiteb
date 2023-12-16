@@ -103,7 +103,7 @@ const Footer: React.FC<Props> = () => {
 
   return (
     <div className="w-screen  text-gray-800 font-mono py-[4rem]">
-      <div className="container mx-auto">
+      <div className="container mx-auto p-3 lg:p-0">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Corporate Information */}
           <div>
