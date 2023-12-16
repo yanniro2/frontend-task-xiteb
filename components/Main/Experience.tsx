@@ -32,7 +32,7 @@ const Experience = () => {
           </span>
         </div>
 
-        <div className="w-full h-[80vh] grid grid-cols-3 grid-rows-2 gap-5 pt-[2rem] group p-3 lg:p-0">
+        <div className="w-full h-[80vh] grid grid-cols-3 grid-rows-2 gap-5 lg:pt-[2rem] group p-3 ">
           {Data.offers.map((offer) => (
             <div
               key={offer.id}
@@ -59,7 +59,7 @@ const Experience = () => {
                 <h4 className="text-gray-200 z-50 font-serif text-center">
                   {offer.subtitle}
                 </h4>
-                <p className="z-50 text-center font-sans text-gray-50 p-3 hidden lg:visible">
+                <p className="z-50 text-center font-sans text-gray-50 p-3 hidden lg:block">
                   {offer.description}
                 </p>
               </div>
