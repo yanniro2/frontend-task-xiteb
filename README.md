@@ -16,7 +16,7 @@ This project is part of a designer's practical exam, with design elements inspir
 ## Project Samples
 
 
-![Project Sample image 1](/images/image%201.png)
+![Project Sample image 1](/images/image.png)
 
 ## Features
 
