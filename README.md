@@ -19,6 +19,10 @@ This project is a testament to my proficiency as a designer, drawing inspiration
 ## Project Samples
 ![Project Sample Image 1](/images/image.png)
 
+## Video Overview
+Watch a brief video overview of the project on YouTube: [Project Video]([https://youtu.be/83Tk-N3ZlTc](https://youtu.be/83Tk-N3ZlTc))
+
+
 ## Key Features
 
 - **Dynamic Data:** Implemented the use of JSON files to fetch and display dynamic data.
@@ -37,3 +41,7 @@ To explore this project, follow these steps:
    ```sh
    git clone https://github.com/yanniro2/frontend-task-xiteb.git
    cd frontend-task-xiteb
+
+2. View Online Projects
+   ```sh
+   https://frontend-task-xiteb.vercel.app/
